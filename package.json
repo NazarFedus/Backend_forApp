@@ -1,0 +1,34 @@
+{
+  "name": "backend_forapp",
+  "version": "1.0.0",
+  "description": "The backend for existed app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NazarFedus/Backend_forApp.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "express"
+  ],
+  "author": "Nazar Fedus <nazarfedus5@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NazarFedus/Backend_forApp/issues"
+  },
+  "homepage": "https://github.com/NazarFedus/Backend_forApp#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "mongoose": "^7.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
