@@ -22,6 +22,12 @@ class authController {
                }
 
                const {username, email, password} = req.body;
+
+               const candidate = await User.findOne({email});
+               if(candidate){
+                    return res.status(400).json({message: "User with this email already exists"})
+               }
+               
                const hashPassword = bcrypt.hashSync(password, 7);
                const newUser = new User({username, email, password: hashPassword})
                await newUser.save();
